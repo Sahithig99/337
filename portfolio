@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Sahithi</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        header {
+            background-color: #FAEBD7;
+            color: Black;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        section {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+        section h2 {
+            margin-bottom: 10px;
+            color: Black;
+        }
+        #about ul {
+            list-style: disc inside;
+            margin-bottom: 20px;
+        }
+        .project {
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        .project img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .project a {
+            display: inline-block;
+            margin-top: 10px;
+            color: Black;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        form label {
+            margin-top: 10px;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        form input, form textarea {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        form input[type="submit"] {
+            margin-top: 20px;
+            background-color: #FAEBD7;
+            color: black;
+            border: none;
+            cursor: pointer;
+            padding: 15px;
+            font-size: 16px;
+        }
+        form input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        footer {
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 40px;
+        }
+        @media (max-width: 600px) {
+            nav ul {
+                flex-direction: column;
+            }
+            nav ul li {
+                margin: 5px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Sahithi</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Home Section (Optional) -->
+    <section id="home">
+        <!-- You can add a welcome message or a banner image here -->
+    </section>
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! I'm Sahithi, a student of Vignan University pursuing B.Tech in CSE department of 4th year. I'm from duggirala near Tenali town. My hobbies are listening to music, watching movies.</p>
+
+        <h3>Educational Background</h3>
+        <ul>
+            <li>Bachelor of Science in Computer Science, Vignan University</li>
+        </ul>
+        <h3>Professional Interests</h3>
+        <ul>
+            <li>Web Development</li>
+            <li>User Experience (UX) Design</li>
+            <li>Open Source Contribution</li>
+        </ul>
+
+        <h3>Technical Skills</h3>
+        <table>
+            <tr>
+                <th>Skill</th>
+                <th>Proficiency</th>
+            </tr>
+            <tr>
+                <td>HTML/CSS</td>
+                <td>Intermediate</td>
+            </tr>
+            <tr>
+                <td>JavaScript</td>
+                <td>Intermediate</td>
+            </tr>
+            <tr>
+                <td>Python</td>
+                <td>Intermediate</td>
+            </tr>
+            <tr>
+                <td>C</td>
+                <td>Intermediate</td>
+            </tr>
+        </table>
+    </section>
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+
+        <div class="project">
+            <h3>Project One: Portfolio Website</h3>
+            <p>A personal portfolio website showcasing my projects, skills, and contact information. Built with HTML, CSS, and JavaScript.</p>
+            <img src="project1.png" alt="Screenshot of Portfolio Website">
+            <a href="https://github.com/yourusername/portfolio-website" target="_blank">View on GitHub</a>
+        </div>
+
+        <div class="project">
+            <h3>Project Three: Weather Forecast Dashboard</h3>
+            <p>An interactive dashboard that provides real-time weather forecasts for any city worldwide. Built with HTML, CSS, and API integration.</p>
+            <img src="project3.png" alt="Screenshot of Weather Forecast Dashboard">
+            <a href="https://weatherdashboard.example.com" target="_blank">Live Demo</a>
+        </div>
+    </section>
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="mailto:sahithig4158@gmail.com" method="post" enctype="text/plain">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+
+            <input type="submit" value="Send Message">
+        </form>
+    </section>
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Your Name. All rights reserved.</p>
+        <p><a href="mailto:sahithig4158@gmail.com">sahithig4158@gmail.com</a></p>
+    </footer>
+
+</body>
+</html>
